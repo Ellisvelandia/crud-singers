@@ -41,10 +41,6 @@ const SingersSection = ({ data }) => {
             >
               Genre: {item.Genre}
             </p>
-            <div className="d-flex justify-content-around align-items-center mt-4">
-              <button className="btn btn-primary">Update</button>
-              <button className="btn btn-danger">Delete</button>
-            </div>
           </div>
         ))}
     </div>
