@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
           style={{ height: "91.5vh" }}
         >
           <h2 style={{ fontSize: "70px" }}>Epic music bands</h2>
-          <button className="viewSinger my-3">View Bands</button>
+          <Link to="/singers" className="viewSinger my-3">View Bands</Link>
         </div>
         <div
           className="col-lg-6 d-flex justify-content-center align-items-end flex-column"

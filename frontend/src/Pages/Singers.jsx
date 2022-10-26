@@ -2,7 +2,7 @@ import React from 'react'
 
 const Singers = () => {
   return (
-    <div>Singers</div>
+    <div className='bg-dark' style={{minHeight: "91.5vh"}}>Singers</div>
   )
 }
 

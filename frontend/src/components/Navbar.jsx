@@ -1,15 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../images/musicband.png";
 
 const Navbar = () => {
   return (
     <div style={{ borderBottom: "1px solid white" }}>
       <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container">
-          <a className="navbar-brand text-white" href="#">
-            Music Bands
-          </a>
+          <Link to="/" className="navbar-brand text-white">
+            <img
+              src={logo}
+              alt="Music Bands"
+              style={{ width: "120px", height: "30px" }}
+            />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
