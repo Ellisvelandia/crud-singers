@@ -1,6 +1,7 @@
 import React from "react";
 
 const SingersSection = ({ data }) => {
+  console.log(data);
   return (
     <div className="d-flex justify-content-around align-items-center flex-wrap my-3">
       {data &&
@@ -10,7 +11,7 @@ const SingersSection = ({ data }) => {
             key={index}
             style={{
               width: "280px",
-              height: "460px",
+              height: "500px",
               border: "1px solid white",
               borderRadius: "20px",
             }}
@@ -31,16 +32,27 @@ const SingersSection = ({ data }) => {
             </div>
             <h6
               className="text-white px-2 my-1"
-              style={{ fontSize: "15px", textAlign: "center" }}
+              style={{ fontSize: "16px", textAlign: "center" }}
             >
               {item.name.slice(0, 10)}
             </h6>
             <p
               className="mb-3 px-2 text-white"
-              style={{ fontSize: "15px", textAlign: "center" }}
+              style={{ fontSize: "14px", textAlign: "center" }}
             >
               Genre: {item.Genre}
             </p>
+            <div className="d-flex justify-content-around align-items-center mt-4 text-white">
+              <p
+                style={{
+                  fontSize: "14px",
+                  textAlign: "center",
+                  wordBreak: "break-all",
+                }}
+              >
+                {item.description}
+              </p>
+            </div>
           </div>
         ))}
     </div>
