@@ -5,6 +5,7 @@ const AddSingers = () => {
   const [Data, setData] = useState({
     name: "",
     image: "",
+    web: "",
     description: "",
     Genre: "",
   });
@@ -73,13 +74,31 @@ const AddSingers = () => {
             for="exampleFormControlInput1"
             className="form-label text-white"
           >
+            Web
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Enter The URL of web"
+            name="web"
+            value={Data.web}
+            onChange={change}
+          />
+        </div>
+
+        <div className="mb-3 container">
+          <label
+            for="exampleFormControlInput1"
+            className="form-label text-white"
+          >
             Description
           </label>
           <input
             type="text"
             className="form-control"
             id="exampleFormControlInput1"
-            placeholder="Enter Description of the Bans"
+            placeholder="Enter Description of the Banks"
             name="description"
             value={Data.description}
             onChange={change}

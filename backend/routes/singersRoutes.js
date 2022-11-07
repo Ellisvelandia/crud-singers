@@ -40,12 +40,13 @@ router.get("/getSingers/:id", async (req, res) => {
 
 router.put("/updateSingers/:id", async (req, res) => {
   const id = req.params.id;
-  const { name, image, description, Genre } = req.body;
+  const { name, image, web, description, Genre } = req.body;
   let singer;
   try {
     singer = await singerModel.findByIdAndUpdate(id, {
       name,
       image,
+      web,
       description,
       Genre,
     });
